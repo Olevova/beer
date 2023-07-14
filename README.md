@@ -1,0 +1,2 @@
+# beer
+Render beers list
