@@ -5,6 +5,7 @@ import { useParams, useLocation } from "react-router-dom";
 import { useBeerStore } from "../../date/beerstore";
 export default function Beer() {
   const location = useLocation();
+  console.log(location);
   const { id } = useParams();
   const beers = useBeerStore((state) => state.beers);
   const oneBeer = beers.find((beer) => beer.id === Number(id));
